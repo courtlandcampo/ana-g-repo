@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Elite">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin">
+</head>
+<body class="contact-main">
+    <header>
+        <nav>
+            <div class="top-bar">
+                <a href="index.html"><img src="images/general/logo.png" alt="Ana Gabriela Logo" id="logo"></a>
+
+                <img src="images/hamburger-menu-cono.png" alt="hamburger menu" width="75px">
+            </div>
+            
+            <div class="options">
+                <ul>
+                    <li><a href="work.html">work</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="protected.html">super secret stuff</a></li>
+                </ul>
+
+                <div class="social-media-icons">
+                    <img src="images/social-media/instagram-icon.png" alt="Instagram Logo" title="Instagram Logo" width="25px">
+                    <img src="images/social-media/linkedin-icon.png" alt="LinkedIn Logo" title="LinkedIn Logo" width="25px">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h2>GET IN TOUCH</h2>
+        
+    <div class="fcf-body">
+        
+            <div id="fcf-form">
+        
+            <form id="fcf-form-id" class="fcf-form-class" method="POST" action="contact-form-process.php">
+                
+                <div class="fcf-form-group">
+                    <label for="Name" class="fcf-label">Name</label>
+                    <div class="fcf-input-group">
+                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                    </div>
+                </div>
+        
+                <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label">Email</label>
+                    <div class="fcf-input-group">
+                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                    </div>
+                </div>
+        
+                <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Say it to my face, bitch</label>
+                    <div class="fcf-input-group">
+                        <textarea id="message" name="Message" class="fcf-form-control" rows="6" maxlength="2000" required></textarea>
+                    </div>
+                </div>
+        
+                <div class="fcf-form-group">
+                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                </div>
+        
+            </form>
+            </div>
+        
+    </div>
+        
+</body>
+</html>

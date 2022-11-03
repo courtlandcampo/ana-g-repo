@@ -1,0 +1,348 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* =========================
+
+        COLORS
+
+tan:        #E5E3D7
+"black":    #3D3C39
+green:      #A6A998
+off white:  #F8F8F3
+
+===========================*/
+
+/* =========================
+
+BASIC FONTS & TYPE COLORS
+
+===========================*/
+
+h1, h2, h3{
+    font-family: 'Special Elite', serif;
+}
+
+p, button, li{
+    font-family: 'Cabin', sans-serif;
+    color: #3D3C39;
+}
+
+.special-elite{
+    font-family: 'Special Elite', serif;
+}
+
+i{
+    font-style: oblique;
+}
+
+/* ******* BUTTON GENERAL ******* */
+button{
+    background-color: transparent;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1em;
+    border: 2px solid #A6A998;
+}
+
+button a{
+    text-decoration: none;
+    color: #3D3C39;
+
+}
+
+/* BUTTON ANIMATION */
+
+button {
+    transition-duration: 0.4s;
+}
+  
+button:hover {
+    background-color: #A6A998;
+}
+
+button a:hover{
+    color: white;
+}
+
+/* ******* NAV BAR ******* */
+
+.options{
+    display: none;
+}
+
+.top-bar{
+    position:fixed;
+    width: 100vw;    
+    display: flex;
+    justify-content: space-between; 
+}
+
+.top-bar a{
+    align-self: center;
+    margin: 0px 50px;
+    scale: 120%;
+}
+
+/* ******* FOOTER ******* */
+footer{
+    background-color: #A6A998;
+    padding-top: 2.5%;
+}
+
+footer h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.social-media-icons{
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+}
+
+.social-media-icons img{
+    padding: 3px;
+}
+/* ************************* */
+/* ******* HOME PAGE ******* */
+/* ************************* */
+.hero h1{
+    font-size: 4.5em;
+    text-align: center;
+    color: #E5E3D7;
+    text-shadow: 1px 0px 10px #3D3C39;
+}
+
+.hero{
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/home/hero.jpg);
+    background-color: #E5E3D7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sustainability{
+    background-color: #E5E3D7;
+    padding: 10% 0;
+
+    /* GRID */
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 25px;
+}
+
+.sustainability h2{
+    font-size: 2em;
+    text-align: right;
+    justify-content: start;
+}
+
+.sustainability p{
+    margin-bottom: 30px;
+}
+
+.sus-div-1 { 
+    grid-area: 2 / 3 / 4 / 5; 
+    justify-self: end;
+}
+.sus-div-2 { 
+    grid-area: 1 / 5 / 4 / 7; 
+    height: 300px;
+    width: 250px;
+    position: center;
+    object-fit: cover;
+    justify-self: start;
+}
+.sus-div-3 { 
+    grid-area: 4 / 3 / 7 / 5; 
+    height: 300px;
+    width: 250px;
+    position: center;
+    object-fit: cover;
+    justify-self: end;
+}
+.sus-div-4 { 
+    grid-area: 4 / 5 / 6 / 8; 
+}
+
+
+/* ************************* */
+/* ****** ABOUT  PAGE ****** */
+/* ************************* */
+.bio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 95vh;
+    padding: 0 60px;
+    background-color: #F8F8F3;
+}
+
+.bio img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    margin: 25px;
+}
+
+.bio h1{
+    font-size: 2em;
+    color: #3D3C39;
+}
+
+.bio p{
+    color: #3D3C39;
+    margin-bottom: 30px;
+}
+
+/*  RESUME */
+.resume{
+    width: 60%;
+    margin: auto;
+    padding: 3vh 0px;
+}
+
+.resume h2{
+    padding-top: 3vh;
+}
+
+.resume-entry{
+    display: flex;
+    align-items: center;
+}
+
+.resume-entry-logo{
+    width: 25%;
+}
+
+.resume-entry-logo img{
+    margin: 0 auto;
+}
+
+.resume-entry-info{
+    width: 75%;
+    margin: 20px 0px;
+    font-family: 'Cabin', sans-serif;
+    color: #3D3C39;
+    border-left: 5px solid #A6A998;
+    padding-left: 10px;
+}
+
+.resume-entry-info i{
+    font-size: .8em;
+}
+.resume-title{
+    font-weight: 20000;
+}
+
+.resume-entry li{
+    margin: 5px 0px;
+}
+
+/* responsive at 1050 px change to column*/
+
+
+
+/* ************************* */
+/* ***** CONTACT  PAGE ***** */
+/* ************************* */
+
+.contact-main{
+    background-color: #A6A998;
+    background-image: url(../images/home/ana-running.JPEG);
+    background-size: cover;
+
+    position: absolute;
+    right: 0px;
+    margin: 0px 30px;
+
+    padding: 7% 0%;
+}
+
+.contact-main h2{
+    font-size: 3em;
+    color: #E5E3D7;
+    text-shadow: 1px 0px 10px #3D3C39;
+}
+
+.contact-main form{
+    color: #E5E3D7;
+    font-family: 'Cabin', sans-serif;
+    text-shadow: 1px 0px 10px black;
+
+    padding: 2em;
+    background-color: #3D3C3980;
+}
+
+.contact-main input[type=text],
+.contact-main input[type=email],
+#message {
+    width: 30vw;
+    padding: 12px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #A6A998;
+    color:#E5E3D7;
+    background-color: #E5E3D760;
+    font-family:'Cabin', sans-serif;
+    resize: vertical;
+}
+
+.contact-main input[type=text]:focus,
+.contact-main input[type=email]:focus,
+#message:focus{
+    background-color: #E5E3D7;
+    color: #3D3C39;
+}
